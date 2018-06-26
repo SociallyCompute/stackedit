@@ -106,5 +106,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxOTEzMjU0Nyw0NjcyMjIwMjddfQ==
+eyJoaXN0b3J5IjpbLTgxOTEzMjU0N119
 -->
