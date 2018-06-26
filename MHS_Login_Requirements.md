@@ -31,7 +31,7 @@ In working with school districts for field test 1 we identified that some distri
 	  9.	Teacher can edit student identifier or password
 	  10.	Teacher can access dashboard for class
 	  11.	Teacher can deactivate student account (so student can not log into MHS)
-1. Student login requirements
+1. **Student login requirements
 	1.	Account is created on behalf of the student and managed by teacher and MHS
 	2.	Student or teacher can change student password
 1. System Requirements:
@@ -106,5 +106,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk0NjQ4MDc3XX0=
+eyJoaXN0b3J5IjpbOTAxMzUwMDkzLDQ5NDY0ODA3N119
 -->
