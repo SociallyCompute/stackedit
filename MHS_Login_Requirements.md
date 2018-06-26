@@ -60,7 +60,7 @@ In working with school districts for field test 1 we identified that some distri
 
 		Description: A list of all your bank accounts and credential information
 		Endpoint: /api/operationHawaii/:yourname/:allCredentials
-		Return: {an array of account credential information, account numbers, passwords, and answers to personal challenge questions, like your favorite beer fo
+		Return: {an array of account credential information, account numbers, passwords, and answers to personal challenge questions, like your favorite beer for a rainy 
 	```
 	  2. Login technology is addressable through an API call.
 	  3. .NET and Unity have necessary technology to leverage the available API's (seems obviously true, but lets make sure.)
@@ -111,7 +111,7 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDk5NjAwOSwtMTY1OTE4Mzk1MCwxNz
-Y4MTg2NTk1LC0xMDYzODcxNjg0LC0xMDI5Mjg1MTk0LC0yMTAy
-OTk3NDA1XX0=
+eyJoaXN0b3J5IjpbLTg2ODg2MTI3LDE4NzQ5OTYwMDksLTE2NT
+kxODM5NTAsMTc2ODE4NjU5NSwtMTA2Mzg3MTY4NCwtMTAyOTI4
+NTE5NF19
 -->
