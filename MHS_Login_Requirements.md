@@ -57,6 +57,8 @@ In working with school districts for field test 1 we identified that some distri
 	    Description: Triplet of teacherid, classid, and studentid used for logging. Doubles as game user authentication.
 	    Endpoint: /api/mhslogin/:studentemail/:token
 	    Return: {teacherid: "<teacherid>", classid: "<classid>", studentid: "<studentid>"}
+
+		Description: A 
 	```
 	  2. Login technology is addressable through an API call.
 	  3. .NET and Unity have necessary technology to leverage the available API's (seems obviously true, but lets make sure.)
@@ -107,5 +109,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc2MTc0MzBdfQ==
+eyJoaXN0b3J5IjpbNzI3NDkxMjM3LC0xMTE3NjE3NDMwXX0=
 -->
