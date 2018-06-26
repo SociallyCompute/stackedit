@@ -99,18 +99,18 @@ In working with school districts for field test 1 we identified that some distri
 1. New Teacher volunteers to participate in the second field test of MHS.
 2. New Teacher follows URL and creates an account with an email address, password, and some profile info (school district, etc.)
 3. Teacher creates class rosters on MHS server.
-  - Teacher or tech coordinator export class roster (of student identifier and [optionally] password) from school learning management system (e.g., Canvas, Blackboard, etc.)
+	  - Teacher or tech coordinator export class roster (of student identifier and [optionally] password) from school learning management system (e.g., Canvas, Blackboard, etc.)
 4. Teacher or MHS staff upload spreadsheet into MHS class rosters.  This sets up student accounts, linked to teachers and classes, in MHS.
 5. Students login to MHS game using a username and password they either know because the school policy manages this, and that's what we uploaded, OR, the teacher provides each student with a username and password.
 6. MHS game will not begin without validating username and password.
-  - If account is verified server passes class and teacher name to game and student starts or continues play based on save file for that student
-  - Failure scenarios:
-    -	If validation fails, student will get a message: "Invalid username/password. Please speak to your teacher for an account or to create a new password.""
-    - If validation fails, teacher will be able to either:
-      - Create an account for a new or forgotten student, who will then feel stigmatized for most of the rest of their lives
-      - Update the student password and share it with them.
+	  - If account is verified server passes class and teacher name to game and student starts or continues play based on save file for that student
+	  - Failure scenarios:
+	    -	If validation fails, student will get a message: "Invalid username/password. Please speak to your teacher for an account or to create a new password.""
+	    - If validation fails, teacher will be able to either:
+	      - Create an account for a new or forgotten student, who will then feel stigmatized for most of the rest of their lives
+	      - Update the student password and share it with them.
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDg4OTkyM119
+eyJoaXN0b3J5IjpbLTE4ODAwMTY2NzddfQ==
 -->
