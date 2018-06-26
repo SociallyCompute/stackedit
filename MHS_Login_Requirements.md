@@ -24,65 +24,65 @@ In working with school districts for field test 1 we identified that some distri
 ### Field Test 2, Winter 2018/19:
 
 1.	Teacher login requirements:
-  1.  Teacher creates account
-  3.	Teacher can change their own password
-  6.	Teacher creates class roster(s)
-  8.	Teacher has view of student password
-  9.	Teacher can edit student identifier or password
-  10.	Teacher can access dashboard for class
-  11.	Teacher can deactivate student account (so student can not log into MHS)
+	  1.  Teacher creates account
+	  3.	Teacher can change their own password
+	  6.	Teacher creates class roster(s)
+	  8.	Teacher has view of student password
+	  9.	Teacher can edit student identifier or password
+	  10.	Teacher can access dashboard for class
+	  11.	Teacher can deactivate student account (so student can not log into MHS)
 1. Student login requirements
-  4.	Account is created on behalf of the student and managed by teacher and MHS
-  5.	Student or teacher can change student password
+		1.	Account is created on behalf of the student and managed by teacher and MHS
+		2.	Student or teacher can change student password
 1. System Requirements:
-  1. Upon player (student) authentication, the system validating a student login shall return a triplet of ids (teacherid, classid, studentid) for use in our logging framework. This will include the following API Endpoints:
-```
-    Description: Batch Return of an array of classes with an array of students for each class when passed a teacherid.  
-    Endpoint: /api/mhslogin/:teacherid/
-    Return: {teacherid: "<teachername", [{classid: "<classname"}, [{studentid: "studentname"}, ... n] ...n ]}
+	  1. Upon player (student) authentication, the system validating a student login shall return a triplet of ids (teacherid, classid, studentid) for use in our logging framework. This will include the following API Endpoints:
+	```
+	    Description: Batch Return of an array of classes with an array of students for each class when passed a teacherid.  
+	    Endpoint: /api/mhslogin/:teacherid/
+	    Return: {teacherid: "<teachername", [{classid: "<classname"}, [{studentid: "studentname"}, ... n] ...n ]}
 
-    Description: Human readable teacher name given teacher id
-    Endpoint: /api/teacher/:teacherid
-    Return: {teachername: "<teachername>"}
+	    Description: Human readable teacher name given teacher id
+	    Endpoint: /api/teacher/:teacherid
+	    Return: {teachername: "<teachername>"}
 
-    Description: Human readable class name given class id
-    Endpoint: /api/class/:classid
-    Return: {classname: "<classname>"}
+	    Description: Human readable class name given class id
+	    Endpoint: /api/class/:classid
+	    Return: {classname: "<classname>"}
 
-    Description: Human readable student name given student id
-    Endpoint: /api/student/:studentid
-    Return: {studentid: "<studentname>"}
+	    Description: Human readable student name given student id
+	    Endpoint: /api/student/:studentid
+	    Return: {studentid: "<studentname>"}
 
-    Description: Triplet of teacherid, classid, and studentid used for logging. Doubles as game user authentication.
-    Endpoint: /api/mhslogin/:studentemail/:token
-    Return: {teacherid: "<teacherid>", classid: "<classid>", studentid: "<studentid>"}
-```
-  2. Login technology is addressable through an API call.
-  3. .NET and Unity have necessary technology to leverage the available API's (seems obviously true, but lets make sure.)
-  4. A map between teacher, student and class ID's and the associated human readable "name" will be maintained in the same database as the user credentials.
-    - "Names" will be retrievable through an API like those described above
-    - ID's will be sufficiently obtuse so as not to be easily guessable
-    - Any student named "Drop Table" is excluded from participation in the field test.
-  5. Metadata requirements: 
-	1. Teacher
-		- id
-		- Name
-		- Username
-		- Password (salted or hashed)
-		- School
-		- City
-		- State
-		- (really, anything "standard" is fine I think)
-	2. Classroom 
-		- id
-		- Name
-	3. Student
-		- id
-		- Student Name
-		- MHS Username
-		- MHS Password (salted or hashed) [Note I have distinguished the "MHS Password" from your ordinary A&E password]
-		- MHS Teacher (Must match a teacher account that exists)
-		- MHS Classroom (Must match a classroom that the teacher created)
+	    Description: Triplet of teacherid, classid, and studentid used for logging. Doubles as game user authentication.
+	    Endpoint: /api/mhslogin/:studentemail/:token
+	    Return: {teacherid: "<teacherid>", classid: "<classid>", studentid: "<studentid>"}
+	```
+	  2. Login technology is addressable through an API call.
+	  3. .NET and Unity have necessary technology to leverage the available API's (seems obviously true, but lets make sure.)
+	  4. A map between teacher, student and class ID's and the associated human readable "name" will be maintained in the same database as the user credentials.
+	    - "Names" will be retrievable through an API like those described above
+	    - ID's will be sufficiently obtuse so as not to be easily guessable
+	    - Any student named "Drop Table" is excluded from participation in the field test.
+	  5. Metadata requirements: 
+		1. Teacher
+			- id
+			- Name
+			- Username
+			- Password (salted or hashed)
+			- School
+			- City
+			- State
+			- (really, anything "standard" is fine I think)
+		2. Classroom 
+			- id
+			- Name
+		3. Student
+			- id
+			- Student Name
+			- MHS Username
+			- MHS Password (salted or hashed) [Note I have distinguished the "MHS Password" from your ordinary A&E password]
+			- MHS Teacher (Must match a teacher account that exists)
+			- MHS Classroom (Must match a classroom that the teacher created)
 
 ### Future Field Tests:
 1. Student can log into MHS from any capable computer with MHS installed
@@ -106,5 +106,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY3MjIyMDI3XX0=
+eyJoaXN0b3J5IjpbLTgxOTEzMjU0Nyw0NjcyMjIwMjddfQ==
 -->
