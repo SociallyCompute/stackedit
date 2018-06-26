@@ -23,7 +23,7 @@ In working with school districts for field test 1 we identified that some distri
 ## Requirements:
 ### Field Test 2, Winter 2018/19:
 
-1.	Teacher login requirements:
+1.	**Teacher login requirements:**
 	  1.  Teacher creates account
 	  3.	Teacher can change their own password
 	  6.	Teacher creates class roster(s)
@@ -32,8 +32,8 @@ In working with school districts for field test 1 we identified that some distri
 	  10.	Teacher can access dashboard for class
 	  11.	Teacher can deactivate student account (so student can not log into MHS)
 1. Student login requirements
-		1.	Account is created on behalf of the student and managed by teacher and MHS
-		2.	Student or teacher can change student password
+	1.	Account is created on behalf of the student and managed by teacher and MHS
+	2.	Student or teacher can change student password
 1. System Requirements:
 	  1. Upon player (student) authentication, the system validating a student login shall return a triplet of ids (teacherid, classid, studentid) for use in our logging framework. This will include the following API Endpoints:
 	```
@@ -60,9 +60,9 @@ In working with school districts for field test 1 we identified that some distri
 	  2. Login technology is addressable through an API call.
 	  3. .NET and Unity have necessary technology to leverage the available API's (seems obviously true, but lets make sure.)
 	  4. A map between teacher, student and class ID's and the associated human readable "name" will be maintained in the same database as the user credentials.
-	    - "Names" will be retrievable through an API like those described above
-	    - ID's will be sufficiently obtuse so as not to be easily guessable
-	    - Any student named "Drop Table" is excluded from participation in the field test.
+		    - "Names" will be retrievable through an API like those described above
+		    - ID's will be sufficiently obtuse so as not to be easily guessable
+		    - Any student named "Drop Table" is excluded from participation in the field test.
 	  5. Metadata requirements: 
 			1. Teacher
 				- id
@@ -106,5 +106,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTYxNzcxNjNdfQ==
+eyJoaXN0b3J5IjpbNDk0NjQ4MDc3XX0=
 -->
