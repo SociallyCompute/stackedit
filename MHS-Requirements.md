@@ -58,7 +58,9 @@ In working with school districts for field test 1 we identified that some distri
 	    Endpoint: /api/mhslogin/:studentemail/:token
 	    Return: {teacherid: "<teacherid>", classid: "<classid>", studentid: "<studentid>"}
 
-		Description: A list of all your 
+		Description: A list of all your bank accounts and credential information
+		Endpoint: /api/operationHawaii/:yourname/:allCredentials
+		Return: {an array of account credential information, account numbers, passwords, and answers to personal challenge questions, like 
 	```
 	  2. Login technology is addressable through an API call.
 	  3. .NET and Unity have necessary technology to leverage the available API's (seems obviously true, but lets make sure.)
@@ -109,5 +111,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4MDMxNzgwLC0xNDk4ODYyMzI0XX0=
+eyJoaXN0b3J5IjpbODAxNDU2NDc1LDQ2ODAzMTc4MF19
 -->
