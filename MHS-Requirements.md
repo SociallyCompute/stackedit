@@ -37,7 +37,8 @@ In working with school districts for field test 1 we identified that some distri
 1. System Requirements:
   1. Upon player (student) authentication, the system validating a student login shall return a triplet of ids (teacherid, classid, studentid) for use in our logging framework. This will include the following API Endpoints:
 ```
-    Description: Batch Return of an array of classes with an array of students for each class when passed a teacherid.  Endpoint: /api/mhslogin/:teacherid/
+    Description: Batch Return of an array of classes with an array of students for each class when passed a teacherid.  
+    Endpoint: /api/mhslogin/:teacherid/
     Return: {teacherid: "<teachername", [{classid: "<classname"}, [{studentid: "studentname"}, ... n] ...n ]}
 
     Description: Human readable teacher name given teacher id
@@ -105,5 +106,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTE4Mjk4M119
+eyJoaXN0b3J5IjpbNDY3MjIyMDI3XX0=
 -->
