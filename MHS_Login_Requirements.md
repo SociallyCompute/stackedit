@@ -64,7 +64,7 @@ In working with school districts for field test 1 we identified that some distri
     - Any student named "Drop Table" is excluded from participation in the field test.
   5. Metadata requirements: 
 	1. Teacher
-		- 
+		- id
 		- Name
 		- Username
 		- Password (salted or hashed)
@@ -105,5 +105,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDk3MjE3MiwtMTQyOTMxMjldfQ==
+eyJoaXN0b3J5IjpbLTUyMTE4Mjk4MywtMTQyOTMxMjldfQ==
 -->
