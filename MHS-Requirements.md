@@ -63,15 +63,8 @@ In working with school districts for field test 1 we identified that some distri
     - ID's will be sufficiently obtuse so as not to be easily guessable
     - Any student named "Drop Table" is excluded from participation in the field test.
   5. Metadata requirements: 
-	  - <![endif]-->
-
-1. Super User (Role): MHS Development Team
-
-- Has access to all accounts
-
-- Can do anything
-
-	2. Teacher
+	1. Teacher
+		- id
 		- Name
 		- Username
 		- Password (salted or hashed)
@@ -79,7 +72,11 @@ In working with school districts for field test 1 we identified that some distri
 		- City
 		- State
 		- (really, anything "standard" is fine I think)
+	2. Classroom 
+		- id
+		- Name
 	3. Student
+		- id
 		- Student Name
 		- MHS Username
 		- MHS Password (salted or hashed) [Note I have distinguished the "MHS Password" from your ordinary A&E password]
@@ -108,5 +105,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTQyOTE3MF19
+eyJoaXN0b3J5IjpbLTUyMTE4Mjk4M119
 -->
