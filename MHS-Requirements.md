@@ -71,44 +71,20 @@ In working with school districts for field test 1 we identified that some distri
 
 - Can do anything
 
-2. Teacher
-
-- Can create students, ideally via an upload
-
-- Can set student passwords without requiring an email account
-
-- Can "create classrooms"
-
-- Can organize students by "Classroom"...
-
-- Metadata
-
-- Name
-
-- Username
-
-- Password (salted or hashed)
-
-- School
-
-- City
-
-- State
-
-- (really, anything "standard" is fine I think)
-
-3. Student [Joe wondered whether or not "Student Accounts" might actually be written as an "app" instead of being included in your current access and entitlements infrastructure. Our needs for this level of account go against prevailing industry trends for security, and we do not control the diversity of school district requirements. (or the fact that they run counter to “best practices” for security) ]
-
-- Does not need to be able to login to the portal
-
-- Our development team, both for the game and for the teacher dashboard, need to be able to access a database or make an API call to validate username and password and, ideally, the "game state" at the time of the most recent previous login. Sean Lander could speak more to whether or not or how that might be stored in the authentication system.
-
-- Metadata
-- Student Name
-- MHS Username
-- MHS Password (salted or hashed) [Note I have distinguished the "MHS Password" from your ordinary A&E password]
-- MHS Teacher (Must match a teacher account that exists)
-- MHS Classroom (Must match a classroom that the teacher created)
+	2. Teacher
+		- Name
+		- Username
+		- Password (salted or hashed)
+		- School
+		- City
+		- State
+		- (really, anything "standard" is fine I think)
+	3. Student
+		- Student Name
+		- MHS Username
+		- MHS Password (salted or hashed) [Note I have distinguished the "MHS Password" from your ordinary A&E password]
+		- MHS Teacher (Must match a teacher account that exists)
+		- MHS Classroom (Must match a classroom that the teacher created)
 
 ### Future Field Tests:
 1. Student can log into MHS from any capable computer with MHS installed
@@ -132,5 +108,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjcxNTUxOF19
+eyJoaXN0b3J5IjpbMTgyNTQyOTE3MF19
 -->
