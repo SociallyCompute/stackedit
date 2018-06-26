@@ -31,10 +31,11 @@ In working with school districts for field test 1 we identified that some distri
 	  9.	Teacher can edit student identifier or password
 	  10.	Teacher can access dashboard for class
 	  11.	Teacher can deactivate student account (so student can not log into MHS)
-1. **Student login requirements
+1. **Student login requirements**
 	1.	Account is created on behalf of the student and managed by teacher and MHS
 	2.	Student or teacher can change student password
-1. System Requirements:
+	3.	Suspend all you know about best security practices. That's not what this is.
+1. **System Requirements:**
 	  1. Upon player (student) authentication, the system validating a student login shall return a triplet of ids (teacherid, classid, studentid) for use in our logging framework. This will include the following API Endpoints:
 	```
 	    Description: Batch Return of an array of classes with an array of students for each class when passed a teacherid.  
@@ -106,5 +107,5 @@ In working with school districts for field test 1 we identified that some distri
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAxMzUwMDkzLDQ5NDY0ODA3N119
+eyJoaXN0b3J5IjpbLTExMTc2MTc0MzBdfQ==
 -->
