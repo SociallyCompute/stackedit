@@ -93,7 +93,7 @@ In working with school districts for field test 1 we identified that some distri
 
 ### Future Field Tests:
 1. Student can log into MHS from any capable computer with MHS installed
-2. Login system will accept a breathalyzer interface for teacher logins
+2. Teachers will need to create new classrooms each semester for the new students they get, while preserving the old classrooms and student affiliations. The classrooms will then require an administrative interface that enables MHS staff or School Tech Coordinators to activate and deactivate classrooms.  
 
 ## Use Case:
 
