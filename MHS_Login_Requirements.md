@@ -38,29 +38,29 @@ In working with school districts for field test 1 we identified that some distri
 1. **System Requirements:**
 	  1. Upon player (student) authentication, the system validating a student login shall return a triplet of ids (teacherid, classid, studentid) for use in our logging framework. This will include the following API Endpoints:
 	```
-	    Description: Batch Return of an array of classes with an array of students for each class when passed a teacherid.  
-	    Endpoint: /api/mhslogin/:teacherid/
-	    Return: {teacherid: "<teachername", [{classid: "<classname"}, [{studentid: "studentname"}, ... n] ...n ]}
+	    Description: Return a list of teachers.
+	    Endpoint: GET /api/mhslogin/teacher
+	    Return: {teachers: [{teachername: "<teachername>", teacherid: "<teacherId>"}]}
+	    
+	    Description: Batch Return of an array of classes with an array of students for each class when passed a teacherid. 
+	    Endpoint: GET /api/mhslogin/teacher/:teacherid
+	    Return: {teachername: "<teachername>", teacherid: "<teacherId>", [{classname: "<classname>", classId: "<classId">, studends: [{studentid: "<studentid>", studentname: "<studentname>"}, ... n] ...n }]}
 
 	    Description: Human readable teacher name given teacher id
-	    Endpoint: /api/teacher/:teacherid
-	    Return: {teachername: "<teachername>"}
+	    Endpoint: GET /api/mshlogin/teacher/:teacherid/name
+	    Return: {teachername: "<teachername>", teacherid: "<teacherId>"}
 
 	    Description: Human readable class name given class id
-	    Endpoint: /api/class/:classid
-	    Return: {classname: "<classname>"}
+	    Endpoint: GET /api/mhslogin/class/:classid
+	    Return: {classname: "<classname>", classid: "<classId>"}
 
 	    Description: Human readable student name given student id
-	    Endpoint: /api/student/:studentid
-	    Return: {studentid: "<studentname>"}
+	    Endpoint: GET /api/mhslogin/student/:studentid
+	    Return: {studentid: "<studentId>", studentname: "<studentName">}
 
 	    Description: Triplet of teacherid, classid, and studentid used for logging. Doubles as game user authentication.
-	    Endpoint: /api/mhslogin/:studentemail/:token
+	    Endpoint: POST /api/mhslogin/:studentemail/login/:token
 	    Return: {teacherid: "<teacherid>", classid: "<classid>", studentid: "<studentid>"}
-
-		Description: A list of all your bank accounts and credential information
-		Endpoint: /api/operationHawaii/:yourname/:allCredentials
-		Return: {an array of account credential information, account numbers, passwords, and answers to personal challenge questions, like your favorite beer for a rainy Tuesday}
 		
 	```
 	  2. Login technology is addressable through an API call.
@@ -110,7 +110,3 @@ In working with school districts for field test 1 we identified that some distri
 	      - Create an account for a new or forgotten student, who will then feel stigmatized for most of the rest of their lives
 	      - Update the student password and share it with them.
 7. Teacher credentials will enable them to access their classes on the MHS Dashboard.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODAwMTY2NzddfQ==
--->
