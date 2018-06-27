@@ -28,7 +28,7 @@ In working with school districts for field test 1 we identified that some distri
 	  3.	Teacher can change their own password
 	  6.	Teacher creates class roster(s)
 	  8.	Teacher has view of student password
-	  9.	Teacher can edit student identifier or password
+	  9.	Teacher can edit student name (NOT ID!) or password
 	  10.	Teacher can access dashboard for class
 	  11.	Teacher can deactivate student account (so student can not log into MHS)
 1. **Student login requirements**
