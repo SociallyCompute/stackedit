@@ -68,7 +68,6 @@ In working with school districts for field test 1 we identified that some distri
 	  4. A map between teacher, student and class ID's and the associated human readable "name" will be maintained in the same database as the user credentials.
 		    - "Names" will be retrievable through an API like those described above
 		    - ID's will be sufficiently obtuse so as not to be easily guessable
-		    - Any student named "Drop Table" is excluded from participation in the field test.
 	  5. Metadata requirements: 
 			1. Teacher
 				- id
