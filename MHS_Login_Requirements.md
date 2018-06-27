@@ -89,6 +89,7 @@ In working with school districts for field test 1 we identified that some distri
 				- MHS Password (salted or hashed) [Note I have distinguished the "MHS Password" from your ordinary A&E password]
 				- MHS Teacher (Must match a teacher account that exists)
 				- MHS Classroom (Must match a classroom that the teacher created)
+	  6. No system accounts can be deleted. Only deactivated. 
 
 ### Future Field Tests:
 1. Student can log into MHS from any capable computer with MHS installed
